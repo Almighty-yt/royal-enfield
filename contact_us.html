@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+  <link rel="icon"
+    href="https://st.depositphotos.com/42522772/56504/v/380/depositphotos_565043104-stock-illustration-letter-crown-logo-crown-logo.jpg?forcejpeg=true"
+    type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="contact_us.css">
+  <link rel="stylesheet" href="background.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    nav {
+      position: sticky !important;
+      top: 0%;
+      padding: 0px 2px 0px 2px !important;
+      z-index: 12;
+    }
+
+    a i {
+      transition: all 0.3s linear;
+    }
+
+    a:hover i {
+      transform: scale(1.5);
+
+    }
+
+    .op:hover {
+      color: #00adb5 !important;
+    }
+
+    .youtube:hover {
+      color: red;
+    }
+
+    .facebook:hover {
+      color: rgb(18, 10, 255);
+    }
+
+    .instagram:hover {
+      color: #e11d74;
+    }
+
+    .twitter:hover {
+      color: #08f1fdcc;
+    }
+
+    .github:hover {
+      color: black;
+    }
+
+    .linkedin:hover {
+      color: #04009a;
+    }
+
+    .google:hover {
+      color: rgb(46, 200, 32);
+    }
+
+    body {
+      font-family: Arial;
+      font-size: 17px;
+      padding: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+      margin: 0 -16px;
+    }
+
+    .col-25 {
+      -ms-flex: 25%;
+      /* IE10 */
+      flex: 25%;
+    }
+
+    .col-50 {
+      -ms-flex: 50%;
+      /* IE10 */
+      flex: 50%;
+    }
+
+    .col-75 {
+      -ms-flex: 75%;
+      /* IE10 */
+      flex: 75%;
+    }
+
+    .col-25,
+    .col-50,
+    .col-75 {
+      padding: 0 16px;
+    }
+
+    .container {
+      background-color: #f2f2f2;
+      padding: 5px 20px 15px 20px;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+    }
+
+    input[type=text] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+
+    input[type=number] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+
+    input[type=email] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+
+    input[type=date] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+    }
+
+    .benten {
+      background-color: #0486aa;
+      color: white;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      width: 100%;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+    .benten:hover {
+      background-color: #1249de;
+    }
+
+    a {
+      color: #2196F3;
+    }
+
+    hr {
+      border: 1px solid lightgrey;
+    }
+
+    span.price {
+      float: right;
+      color: grey;
+    }
+
+    .turn .tojo {
+      visibility: hidden;
+      background-color: rgba(0, 0, 0, 0.788);
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 5px;
+
+    }
+
+    .turn:hover .tojo {
+      visibility: visible;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column-reverse;
+      }
+
+      .col-25 {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+  </style>
+</head>
+
+<body style="background-color: #161616e0;">
+  <div style="background-color: #0a0a0a;">
+    <img style="height: 70px; " src="royal enfield logo .png" alt="logo">
+    <button style="background-color: #1992e2; border-color: #0a0a0a; " type="button" id="signUp"
+      class="btn btn-primary"><a style="color: white;" href="login.html"><i
+          class="fas fa-user-circle"></i>Login</a></button>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(0, 0, 0);">
+    <div class="container-fluid">
+      <a class="navbar-brand ab" style="color: #00adb5;" href="contact_us.html"><i class="fas fa-phone"></i> &nbsp;
+        Contact Us</a>
+      <button style="background-color: rgba(0, 0, 0, 0.675);" class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 yug">
+          <li class="nav-item aa">
+            <a class="nav-link" aria-current="page" href="Dream.X.html" target="_blank"><i class="fa fa-home"></i>
+              &nbsp; Home</a>
+          </li>
+          <li class="nav-item aa">
+            <a class="nav-link" aria-current="page" href="service.html" target="_blank"><i class="fa fa-shop"></i>
+              &nbsp; Service</a>
+          </li>
+          <li class="nav-item aa">
+            <a class="nav-link" aria-current="page" href="accessories.html" target="_blank"><i class="fa fa-gear"></i>
+              &nbsp; Accessories</a>
+          </li>
+          <li class="nav-item aa">
+            <a class="nav-link" aria-current="page" href="locate_us.html"><i class="fa fa-location"></i> &nbsp; Locate
+              us</a>
+          </li>
+          <li class="nav-item aa">
+            <a class="nav-link" aria-current="page" href="contact_us.html"><i class="fa fa-phone"></i> &nbsp; CONTACT
+              US</a>
+          </li>
+        </ul>
+        <form class="d-flex"></form>
+        <input class="form-control me-2" style="align-self:center; width: 20%;" type="search" placeholder="Search"
+          aria-label="Search" />
+        <!-- <button style="align-self: center; background-color: rgb(196, 83, 13); color: black;" class="btn btn-outline-success" type="submit">
+        Search
+      </button> -->
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <img style="margin-bottom: 10px;"
+    src="https://cdn.visordown.com/styles/v2_normal/s3/field/image/Slide%20School%20-%20EU%20%28web%20banner%296-01.jpg"
+    width="100%" />
+  <div style=" background-color: #151515a3 ;color: #e5f0f0e3; padding: 10px; ">
+    <h2 style="font-size: 40px;"> &nbsp; <i class="fa fa-phone"></i> Contact Us Form</h2>
+  </div>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Deepanshu Lather">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="email" id="email" name="email" placeholder="deep_lather_01@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="1415-A, Street no. 13, Govindpuri">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="New Delhi">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="Haryana">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip Code</label>
+                  <!-- <input type="number" maxlength="6" minlength="6" id="zip" name="zip" placeholder="126101"> -->
+                  <input name="somename"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="6" placeholder="126101" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3 style="font-weight: 700;">Payment Portal </h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="Deepanshu Lather">
+              <label for="ccnum">Credit card number</label>
+              <input name="somename"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                type="number" maxlength="16" min="1111111111111111" placeholder="1111-2222-3333-4444" />
+              <label for="expmonth">Exp Month</label>
+              <input type="date" id="expmonth" min="2022-07-10" value="date" name="expmonth" placeholder="September">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input name="somename"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="4" min="2022" placeholder="2025" />
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input name="somename"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength="3" min="111" placeholder="248" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to Proceed" class="benten">
+
+        </form>
+      </div>
+    </div>
+    <div class="col-25">
+      <div class="container">
+        <h4 style="font-weight: 700">Add to Cart <span class="price" style="color:black"><i
+              class="fa fa-shopping-cart"></i> <b>0</b></span></h4>
+        <div class="turn">
+          <p><a href="#">Product 1</a> <span class="tojo"><i class="fad fa-add"></i> Add Product</span> <span
+              class="price">$0</span> </p>
+        </div>
+        <div class="turn">
+          <p><a href="#">Product 2</a> <span class="tojo"><i class="fad fa-add"></i> Add Product</span> <span
+              class="price">$0</span> </p>
+        </div>
+        <div class="turn">
+          <p><a href="#">Product 3</a> <span class="tojo"><i class="fad fa-add"></i> Add Product</span> <span
+              class="price">$0</span> </p>
+        </div>
+        <div class="turn">
+          <p><a href="#">Product 4</a> <span class="tojo"><i class="fad fa-add"></i> Add Product</span> <span
+              class="price">$0</span> </p>
+        </div>
+        <!-- <p><a href="#">Product 2</a> <span class="price">$0</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$0</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$0</span></p>
+      <hr> -->
+        <p style="font-weight: 700;">Total <span class="price" style="color:black"><b>$0</b></span></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div id="carousel-slider" class="carousel slide carousel-fade set " data-ride="carousel" data-interval="2000">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-slider" data-slide-to="1"></li>
+        <li data-target="#carousel-slider" data-slide-to="2"></li>
+      </ol>
+      <!--Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="royal enfield photo 01.png" alt="First slide" />
+        </div>
+        <!--/First slide-->
+        <!--Second slide-->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="royal enfield photo 02.png" alt="img" />
+        </div>
+        <!--/Second slide-->
+        <!--Third slide-->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="royal enfield photo 03.png" alt="Third slide" />
+        </div>
+        <!--/Third slide-->
+      </div>
+    </div>
+  </div>
+  <div>
+    <img style="width: 100%;" src="brands collaboration.png" alt="collaboration with different companies">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <div class="row" style="
+        margin-bottom: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.788);
+      ">
+
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div>
+
+      <!-- Footer -->
+      <footer class="text-center text-lg-start text-black" style="background-color: #c2bfbf; ">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4 text-black" style="background-color: #1b1919de;">
+
+          <!-- Left -->
+          <div class="me-5">
+            <span style="font-size: large; margin-left: 25px; color: white;">Join the converstion</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div style="font-size: 25px;">
+            <a href="https://www.facebook.com/kulwant.lather.98" class=" me-4 link facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/deep_lather_01" class=" me-4 link twitter ">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com%3Fhl%3Den-US"
+              class=" me-4 link google">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="https://www.instagram.com/almighty_01/" class=" me-4 link instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/almighty-yt-1637b4244/" class=" me-4 link linkedin">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCxpR3rCVT6r4-HnN2JXgb3g" class=" me-4 link youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://github.com/Almighty-yt" class=" me-4 link github">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5" style="font-size: 13px;">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-6 col-xl-1 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class=" fw-bold" style="margin-bottom: 30px; font-size: large;">Motorcycles</h6>
+                <p>
+                  <a href="#!" class="text-black">Scram 411</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Classic 350
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Meteor</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Interceptor 650</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Continental GT</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Himalayan</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Bullet</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-6 col-xl-1 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class=" fw-bold" style="margin-bottom: 30px;font-size: large;">Rides & Events
+                </h6>
+
+                <p>
+                  <a href="#!" class="text-black">Rides</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Events</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Ride Out</a>
+                </p>
+                <p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-6 col-xl-1 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class=" fw-bold" style="margin-bottom: 30px;font-size: large;">Support</h6>
+
+                <p>
+                  <a href="#!" class="text-black">Service Centres</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Stores</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Owner's Manual</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Contact Us</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Book a Test Ride</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Make It Yours</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Become a Dealer</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Become a Genuine Parts Distributor</a>
+                </p>
+
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-6 col-xl-1 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class=" fw-bold" style="margin-bottom: 30px; font-size: large;">About Us</h6>
+                <p>
+                  <a href="#!" class="text-black">Since 1901</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">About Eicher Motors
+                  </a>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-6 col-xl-1 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class=" fw-bold" style="margin-bottom: 30px; font-size: large;">News & Media
+                </h6>
+                <p>
+                  <a href="#!" class="text-black">News</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Press Releases
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Media Kit</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Events</a>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-6 col-xl-1 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class=" fw-bold" style="margin-bottom: 30px; font-size: large;">Careers
+                </h6>
+                <p>
+                  <a href="#!" class="text-black">Life at Royal Enfield</a>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-6 col-xl-1 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class=" fw-bold" style="margin-bottom: 30px; font-size: large;">Our World
+                </h6>
+                <p>
+                  <a href="#!" class="text-black">Royal Enfield App</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Custom World
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">News and Media</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Since 1901</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Wallpapers
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Forum</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-black">Trip Stories</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <div class="asd" style="background-color: rgba(31, 30, 30, 0.986); color: rgb(8, 86, 204);">
+          <!-- Links -->
+          <h6 style=" text-align: center;
+  font-weight: bold; font-size: 200%; margin-bottom: 20px;">Contact us</h6>
+
+          <ul style=" text-align: center;
+font-weight: bold; font-size: 80%;">
+            <i class="fas fa-home"></i> 110019, New Delhi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <i class="fas fa-envelope"></i> klather60@gmail.com &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <i class="fas fa-envelope"></i> hr31deep@gmail.com &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <i class="fas fa-phone"></i> + 91 951 809 9616 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <i class="fas fa-print"></i> + 91 828 733 2294 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #434343d7">
+          <div>
+            <a style="font-size: 10px;">© 2022. Royal Enfield. | *T&C apply. Images shown here may differ from the
+              actual product.</a>
+          </div>
+          <div>
+            <a style="font-size: 10px;">Private Import Policy | Privacy | Terms & Conditions | Cookies | Site | Map</a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
